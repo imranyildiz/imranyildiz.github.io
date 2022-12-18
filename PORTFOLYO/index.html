@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İmran YILDIZ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/d755b7edb1.js" crossorigin="anonymous"></script>
+    <link href='https://css.gg/components.css' rel='stylesheet'>
+
+</head>
+<body>
+    <!-- HEADER START -->
+        <header id="header">
+            <div class="header">
+                <div class="container">
+                    <div class="header-navbar">
+                        <div class="header-logo">
+                            <h2>SOFTWORX</h2>
+                        </div>
+                        <div class="header-menu">
+                            <ul id="menuItems">
+                                <li><a href="#">Anasayfa</a></li>
+                                <li><a href="#">Hakkımda</a></li>
+                                <li><a href="#">Portfolyo</a></li>
+                                <li><a href="#">Bana Ulaşın</a></li>
+                            </ul>
+                            <i class="fas fa-bars" id="menu-icon" onclick="menuToggle()"></i>
+                        </div>
+                    </div>
+                    <div class="header-text">
+                        <h1><span class="first-letter">M</span>erhaba!</h1>
+                        <!-- <a href="#"class="get"></a> -->
+                    </div>
+                </div>
+            </div>
+        </header>
+    <!-- ABOUT START -->
+    <section id="about">
+        <div class="about">
+            <div class="contanier">
+                <div class="about-title">
+                    <h2>HAKKIMDA</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-img">
+                        <img src="logo.png" alt="">
+                    </div>
+                    <div class="about-text">
+                        <h4>Merhaba!</h4>
+                        <div id="icon">
+                            <i class="gg-components"></i>
+                        </div>
+                        <p>Ben yazılım uzmanıyım. Yapmış olduğum çalışmaların bir kısmını buradan paylaşmaktayım. <br> Bana vakit ayırıp incelediğin için teşekkür ederim. Diğer projelerde görüşmek üzere...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolyo Start -->
+    <section id="portfolio">
+        <div class="about-title">
+            <h2>PORTFOLYO</h2>
+        </div>
+        <div class="portfolyo">
+            <div class="portfolyo-item">
+                <img src="trendyol.logo.png" alt="">
+                <div class="overlay">
+                    <i class="gg-arrow-down-o"></i>
+                </div>
+            </div>
+            <div class="portfolyo-item">
+                <img src="ciceksepeti-logo-kare.jpg" alt="">
+                <div class="overlay">
+                    <i class="gg-arrow-down-o"></i>
+                </div>
+            </div>
+            <div class="portfolyo-item">
+                <img src="banka.png" alt="">
+                <div class="overlay">
+                    <i class="gg-arrow-down-o"></i>
+                </div>
+            </div>
+            <div class="portfolyo-item">
+                <img src="LinkedIn.png" alt="">
+                <div class="overlay">
+                    <i class="gg-arrow-down-o"></i>
+                </div>
+            </div>
+            <div class="portfolyo-item">
+                <img src="BluTV.png" alt="">
+                <div class="overlay">
+                    <i class="gg-arrow-up-o"></i>
+                </div>
+            </div>
+            <div class="portfolyo-item">
+                <img src="netflix-logo.png" alt="">
+                <div class="overlay">
+                    <i class="gg-arrow-up-o"></i>
+                </div>
+            </div>
+            <div class="portfolyo-item">
+                <img src="exxen.logo2.png" alt="">
+                <div class="overlay">
+                    <i class="gg-arrow-up-o"></i>
+                </div>
+            </div>
+            <div class="portfolyo-item">
+                <img src="tw.jpg" alt="">
+                <div class="overlay">
+                    <i class="gg-arrow-up-o"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- DISCOVER START -->
+    <section id="contact">
+        <div class="container">
+            <div class="about-title">
+                <h2>BANA ULAŞIN</h2>
+            </div>
+            <div class="contact-area">
+                <div class="cont-left">
+                    <div class="cont-top">
+                        <div class="cont-element">
+                            <i class="far fa-address-card"></i>
+                            <address>İstanbul / Turkey</address>
+                        </div>
+                        <div class="cont-element">
+                            <i class="far fa-envelope"></i>
+                            <a href="mailto:imranyildiiz@gmail.com">imranyildiiz@gmail.com</a>
+                        </div>
+                        <div class="cont-element">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:+905412686634">541 268 6634</a>
+                        </div>
+                    </div>
+                    <div class="cont-bottom">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a> 
+                        <a href="#"><i class="fab fa-twitter"></i></a> 
+                        <a href="#"><i class="fab fa-instagram"></i></a> 
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+                    </div>
+                </div>
+                <div class="cont-right">
+                    <form action="">
+                        <input type="text" name="text" id="text" placeholder="Ad Soyad:">
+                        <input type="email" name="email" id="email" placeholder="eMail:">
+                        <textarea name="message" id="message" rows="10" placeholder="Mesajınız..."></textarea>
+                        <button>Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        var menuItems=document.getElementById('menuItems');
+        menuItems.style.maxHeight="opx";
+        function menuToggle(){
+            if(menuItems.style.maxHeight=="0px"){
+                menuItems.style.maxHeight="200px";
+            }else{
+                menuItems.style.maxHeight="0px"
+            }
+        }
+    </script>
+</body>
+</html>
